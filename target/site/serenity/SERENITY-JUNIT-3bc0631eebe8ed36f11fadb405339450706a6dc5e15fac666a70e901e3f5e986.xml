@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="verifying user authorization" skipped="0" tests="1" time="20.81" timestamp="2021-01-05 02:00:52"><testcase name="1.001 Check that &quot;Home&quot; page is opened"><error message="invalid selector: Unable to locate an element with the xpath expression //div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')] because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')]' is not a valid XPath expression.&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\GUETTA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 11e8f7c349fd9a6d0a56660b441cab8b&#10;*** Element info: {Using=xpath, value=//div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')]}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.InvalidSelectorException">invalid selector: Unable to locate an element with the xpath expression //div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')]' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\GUETTA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 11e8f7c349fd9a6d0a56660b441cab8b
+*** Element info: {Using=xpath, value=//div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')]}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown</error><system-err>invalid selector: Unable to locate an element with the xpath expression //div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')]' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\GUETTA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 11e8f7c349fd9a6d0a56660b441cab8b
+*** Element info: {Using=xpath, value=//div[@class='form-sub-title'][.='o.ivankovckyi@aimprosoft.com')]}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown&#13;
+io.getwhistler.pages.EMDSignInPage.emailIsDisplayedAbovePasswordField(EMDSignInPage.java:27)&#13;
+io.getwhistler.steps.serenity.EndUserSteps.emailIsDisplayedAbovePasswordField(EndUserSteps.java:29)&#13;
+io.getwhistler.steps.DefinitionSteps.emailIsDisplayedAbovePasswordField(DefinitionSteps.java:37)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

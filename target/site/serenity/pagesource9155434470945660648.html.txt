@@ -1,0 +1,100 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon.ico">
+    <title>Whistler | Whistler Login</title>
+    <link href="/css/base?v=S5vEGHm0DuX3EBJHKS3if4RQKtOdyAemEGgTRxqh9rQ1" rel="stylesheet">
+
+    <link href="/css/plugins?v=sLaMt0n0e0pVT_lhuYbA_z1DL0y5ty_b5ZKFQm8v7601" rel="stylesheet">
+
+    <link href="/css/icons?v=VnVQW57uuMyBdvqNtya-GGxeFtmlxLZjy6w4Mn6e2hQ1" rel="stylesheet">
+
+    <link href="/Content/css?v=DR8c5SpirlBw9xvhUOIULOjCZzx4heyTNLYfL13mJzk1" rel="stylesheet">
+
+    
+    
+    <link href="/Content/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+
+    
+<style type="text/css"></style></head>
+
+<body class="gray-bg  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+    
+
+
+<div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+        <div class="p-md">
+            <img src="/Content/images/whistler-horizontal-lg.png" width="100%">
+        </div>
+        <h3>Whistler Central Authentication System</h3>
+        <div class="form-box m-t-sm" id="form-box">
+            <div id="form-pre-auth" class="form-block" style="left: -400px; display: none;">
+                <form action="/core/pre-authenticate" method="post" class="m-t validate-form" role="form" data-prevent-default="true" novalidate="novalidate">
+                    <input name="__RequestVerificationToken" type="hidden" value="xEdQ8bEEkZuTdpm7GYxMhc9tO9UnnFVcqqUaXaPoSxjdqh20K9PCh0k68naQYfxIAOc_T3pctHrXjg2ewy_-rFi56EcoC3A3ivSG4uqdHxI1">
+                    <input type="hidden" name="signInId" id="signInId" value="5e93f612edfdf3cc9eefc2cd910ed132">
+                    <div class="form-title-box text-left">
+                        <div class="form-title-top">Whistler Login</div>
+                        <div class="form-sub-title">Enter your email to continue</div>
+                    </div>
+                    <div class="form-group text-left">
+                        <input type="email" name="username" id="username" class="form-control valid" placeholder="Your Email Address" required="" aria-required="true">
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b ladda-button" data-style="zoom-in"><span class="ladda-label">Next</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+                </form>
+            </div><div id="form-post-auth" class="form-block" style="right: 0px;">
+    <form action="/core/verify" method="post" class="m-t validate-form" role="form" data-prevent-default="true" novalidate="novalidate">
+        <input name="__RequestVerificationToken" type="hidden" value="JirkYeTDWFk8y239_Bh1meyYUHG2oARJGQyqusgx2QKCOJYO6u2A6xAPeW2-Pda1Qfk4oudcH6J6elVczl2LwbONPoXNs0KKiIPqDU31Xis1">
+        <input type="hidden" name="SignInId" id="SignInId" value="5e93f612edfdf3cc9eefc2cd910ed132">
+        <input type="hidden" name="Username" id="Username" value="o.ivankovckyi@aimprosoft.com">
+        <div class="form-group text-left">
+            <div class="col-xs-10">
+                <div class="form-title-box text-left">
+                    <div class="form-title-top">Oleg Ivankovskyi</div>
+                    <div class="form-sub-title">o.ivankovckyi@aimprosoft.com</div>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="btn btn-default btn-circle" id="btn-cancel-email">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-left">
+            <input type="password" name="Password" id="Password" class="form-control" placeholder="Enter your password" required="" aria-required="true">
+        </div>
+        <div class="form-group">
+            <div class="col-md-6 col-md-push-6 col-sm-12 col-xs-12"><button type="submit" class="btn btn-primary btn-block block full-width m-b ladda-button" data-style="zoom-in"><span class="ladda-label">Sign In</span><span class="ladda-spinner"></span></button></div>
+            <div class="col-md-6 col-md-pull-6 col-sm-12 col-xs-12"><a class="btn btn-default btn-block" href="https://central.getwhistler.io/account/password-reset">Forgot Password</a></div>
+        </div>
+    </form>
+</div>
+        </div>
+        <p class="m-t"> <small>Copyright <strong>Whistler</strong> © 2014-2021</small> </p>
+    </div>
+</div>
+
+
+    <script src="/js/base?v=NeJVTavlYsjA1u-dYFziGqIXqlhg8nZB5SIxad7hfr01"></script>
+
+    <script src="/js/plugins?v=SRLzOqTfa-iekDP55M2Tx4UKRsfo2A0cIaGxjtBHBkE1"></script>
+
+    <script src="/js/whistler?v=EToPARxpDaZ7v4xqljll42im7zb6QMB2ysBr-CZ19pk1"></script>
+
+
+    
+    <script src="/Scripts/plugins/ladda/spin.min.js"></script>
+    <script src="/Scripts/plugins/ladda/ladda.min.js"></script>
+    <script src="/Scripts/plugins/ladda/ladda.jquery.min.js"></script>
+    <script src="/Scripts/Pages/whistlerAuth.js"></script>
+
+
+
+
+</body></html>
