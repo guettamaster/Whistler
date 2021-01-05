@@ -36,4 +36,12 @@ public class EndUserSteps extends ScenarioSteps {
     public void clickOnSignInButton() {
         emdSignInPage.clickOnSignInButton();
     }
+
+    public void userNameIsDisplayedInTheLeftNavigationMenu(String arg0) {
+        Assert.assertTrue("False", emdSignInPage.userNameIsDisplayedInTheLeftNavigationMenu(arg0));
+    }
+
+    public void inboxPageIsDisplayed() {
+        Assert.assertTrue("False", emdSignInPage.inboxPageIsDisplayed());
+    }
 }

@@ -46,4 +46,14 @@ public class DefinitionSteps {
     public void clickOnSignInButton() {
         endUserSteps.clickOnSignInButton();
     }
+
+    @Then("^\"([^\"]*)\" user name is displayed in the left navigation menu$")
+    public void userNameIsDisplayedInTheLeftNavigationMenu(String arg0) throws Throwable {
+        endUserSteps.userNameIsDisplayedInTheLeftNavigationMenu(arg0);
+    }
+
+    @Then("^Inbox page is displayed$")
+    public void inboxPageIsDisplayed() {
+        endUserSteps.inboxPageIsDisplayed();
+    }
 }

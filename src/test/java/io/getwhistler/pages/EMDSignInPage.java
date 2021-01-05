@@ -24,7 +24,7 @@ public class EMDSignInPage extends net.serenitybdd.core.pages.PageObject {
     }
 
     public boolean emailIsDisplayedAbovePasswordField(String arg0) {
-        withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS.EMAIL_ABOVE_PASSWORD_FIELD.replace("$1", arg0))));
+        withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.EMAIL_ABOVE_PASSWORD_FIELD.replace("$1", arg0))));
         return $(LOCATORS.EMAIL_ABOVE_PASSWORD_FIELD.replace("$1", arg0)).isPresent();
     }
 
@@ -35,6 +35,15 @@ public class EMDSignInPage extends net.serenitybdd.core.pages.PageObject {
     public void clickOnSignInButton() {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SIGNIN_BUTTON)));
         $(LOCATORS.SIGNIN_BUTTON).click();
-        waitABit(5000);
+    }
+
+    public boolean userNameIsDisplayedInTheLeftNavigationMenu(String arg0) {
+        withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0))));
+        return $(LOCATORS.USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0)).isPresent();
+    }
+
+    public boolean inboxPageIsDisplayed() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORIES_TITLE)));
+        return $(LOCATORS.CATEGORIES_TITLE).isPresent();
     }
 }
