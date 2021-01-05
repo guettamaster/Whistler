@@ -7,5 +7,5 @@ Feature: verifying user authorization
     Then "o.ivankovckyi@aimprosoft.com" email is displayed above Password field
     When enter "Ivanoleg150288#" password in the Password field
     When click on Sign In button
-#    Then "Oleg Ivankovskyi" user name is displayed in the left navigation menu
+    Then "Oleg Ivankovskyi" user name is displayed in the left navigation menu
 #    Then Inbox page is displayed
