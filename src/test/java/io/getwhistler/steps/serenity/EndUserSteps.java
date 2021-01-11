@@ -1,6 +1,7 @@
 package io.getwhistler.steps.serenity;
 
 import io.getwhistler.LOCATORS;
+import io.getwhistler.pages.CIDSignInPage;
 import io.getwhistler.pages.EMDSignInPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -9,6 +10,7 @@ import org.junit.Assert;
 public class EndUserSteps extends ScenarioSteps {
 
     EMDSignInPage emdSignInPage;
+    CIDSignInPage cidSignInPage;
 
     //======================================================SignInPage===================================================
 
@@ -43,5 +45,13 @@ public class EndUserSteps extends ScenarioSteps {
 
     public void inboxPageIsDisplayed() {
         Assert.assertTrue("False", emdSignInPage.inboxPageIsDisplayed());
+    }
+
+    public void openAuthenticationPage() {
+        cidSignInPage.open();
+    }
+
+    public void dashboardPageIsDisplayed() {
+        Assert.assertTrue("False", cidSignInPage.dashboardPageIsDisplayed());
     }
 }

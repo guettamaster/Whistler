@@ -16,4 +16,8 @@ public interface LOCATORS {
 
     String USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION = "//strong[@class='font-bold'][.='$1']";
     String CATEGORIES_TITLE = "//h5[.='Categories']";
+
+//TODO======================================================CIDDashboardAfterSuccessfulAuthorizationPage========================================================
+
+    String DASHBOARD_GENERAL_TABLES = "//li[@class='active'][.='Application Access Logs']";
 }

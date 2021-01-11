@@ -56,4 +56,14 @@ public class DefinitionSteps {
     public void inboxPageIsDisplayed() {
         endUserSteps.inboxPageIsDisplayed();
     }
+
+    @Given("^open authentication page$")
+    public void openAuthenticationPage() {
+        endUserSteps.openAuthenticationPage();
+    }
+
+    @Then("^Dashboard page is displayed$")
+    public void dashboardPageIsDisplayed() {
+        endUserSteps.dashboardPageIsDisplayed();
+    }
 }

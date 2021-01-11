@@ -1,4 +1,4 @@
-Feature: verifying user authorization
+Feature: verifying EMD user authorization
 
   Scenario: 1.001 Check that "Inbox" page is opened
     Given open signin page
