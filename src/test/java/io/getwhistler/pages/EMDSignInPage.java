@@ -46,4 +46,5 @@ public class EMDSignInPage extends net.serenitybdd.core.pages.PageObject {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORIES_TITLE)));
         return $(LOCATORS.CATEGORIES_TITLE).isPresent();
     }
+
 }

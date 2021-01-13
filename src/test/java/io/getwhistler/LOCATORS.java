@@ -20,4 +20,6 @@ public interface LOCATORS {
 //TODO======================================================CIDDashboardAfterSuccessfulAuthorizationPage========================================================
 
     String DASHBOARD_GENERAL_TABLES = "//li[@class='active'][.='Application Access Logs']";
+    String LINK_IN_THE_LEFT_NAV_MENU = "//span[@class='nav-label'][.='$1']";
+    String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
 }

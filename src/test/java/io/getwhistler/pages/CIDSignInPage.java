@@ -19,4 +19,5 @@ public class CIDSignInPage extends net.serenitybdd.core.pages.PageObject {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.DASHBOARD_GENERAL_TABLES)));
         return $(LOCATORS.DASHBOARD_GENERAL_TABLES).isPresent();
     }
+
 }

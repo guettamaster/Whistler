@@ -10,4 +10,9 @@ Feature: verifying violation displaying on the Inbox page
     Then "Oleg Ivankovskyi" user name is displayed in the left navigation menu
     Then Dashboard page is displayed
 
-  Scenario: 3.001 Check that user settings have
+  Scenario: 3.001 Check that the lexicon has the Never Block option selected in the Blocking Policy
+    Then "Risk Policies" link is displayed in the Left Navigation menu
+    When click on "Risk Policies" link
+    Then Expanded menu is appeared
+    Then "Lexicons" sub-link is displayed in the Expanded menu
+    When click on "Lexicons" sub-link

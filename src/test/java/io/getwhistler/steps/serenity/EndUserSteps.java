@@ -2,6 +2,7 @@ package io.getwhistler.steps.serenity;
 
 import io.getwhistler.LOCATORS;
 import io.getwhistler.pages.CIDSignInPage;
+import io.getwhistler.pages.CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage;
 import io.getwhistler.pages.EMDSignInPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -11,6 +12,7 @@ public class EndUserSteps extends ScenarioSteps {
 
     EMDSignInPage emdSignInPage;
     CIDSignInPage cidSignInPage;
+    CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage;
 
     //======================================================SignInPage===================================================
 
@@ -53,5 +55,17 @@ public class EndUserSteps extends ScenarioSteps {
 
     public void dashboardPageIsDisplayed() {
         Assert.assertTrue("False", cidSignInPage.dashboardPageIsDisplayed());
+    }
+
+    public void linkIsDisplayedInTheLeftNavigationMenu(String arg0) {
+        Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.linkIsDisplayedInTheLeftNavigationMenu(arg0));
+    }
+
+    public void clickOnLink(String arg0) {
+        cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.clickOnLink(arg0);
+    }
+
+    public void expandedMenuIsAppeared() {
+        Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.expandedMenuIsAppeared());
     }
 }

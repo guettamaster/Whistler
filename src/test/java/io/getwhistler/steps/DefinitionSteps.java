@@ -66,4 +66,19 @@ public class DefinitionSteps {
     public void dashboardPageIsDisplayed() {
         endUserSteps.dashboardPageIsDisplayed();
     }
+
+    @Then("^\"([^\"]*)\" link is displayed in the Left Navigation menu$")
+    public void linkIsDisplayedInTheLeftNavigationMenu(String arg0) throws Throwable {
+        endUserSteps.linkIsDisplayedInTheLeftNavigationMenu(arg0);
+    }
+
+    @When("^click on \"([^\"]*)\" link$")
+    public void clickOnLink(String arg0) throws Throwable {
+        endUserSteps.clickOnLink(arg0);
+    }
+
+    @Then("^Expanded menu is appeared$")
+    public void expandedMenuIsAppeared() {
+        endUserSteps.expandedMenuIsAppeared();
+    }
 }
