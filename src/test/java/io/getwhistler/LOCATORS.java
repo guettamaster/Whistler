@@ -22,4 +22,8 @@ public interface LOCATORS {
     String DASHBOARD_GENERAL_TABLES = "//li[@class='active'][.='Application Access Logs']";
     String LINK_IN_THE_LEFT_NAV_MENU = "//span[@class='nav-label'][.='$1']";
     String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
+    String LEXICONS_SUB_LINK = "//a[@href='/riskpolicies/lexicons']/i[@class='fa fa-book']";
+    String LEXICONS_TITLE = "//h2[.='Lexicons']";
+    String LEXICONS_NAME_FROM_THE_LEXICONS_LIST = "//td[@class='name-column font-bold']/a[.='$1']";
+    String LEXICON_PAGE_BREADCRUMB = "//li[@class='active']/strong[.='$1']";
 }

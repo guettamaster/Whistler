@@ -81,4 +81,29 @@ public class DefinitionSteps {
     public void expandedMenuIsAppeared() {
         endUserSteps.expandedMenuIsAppeared();
     }
+
+    @Then("^Lexicons sub-link is displayed in the Expanded menu$")
+    public void lexiconsSubLinkIsDisplayedInTheExpandedMenu() {
+        endUserSteps.lexiconsSubLinkIsDisplayedInTheExpandedMenu();
+    }
+
+    @When("^click on Lexicons sub-link$")
+    public void clickOnLexiconsSubLink() {
+        endUserSteps.clickOnLexiconsSubLink();
+    }
+
+    @Then("^Lexicons page is opened$")
+    public void lexiconsPageIsOpened() {
+        endUserSteps.lexiconsPageIsOpened();
+    }
+
+    @When("^choose \"([^\"]*)\" lexicon from the lexicons list$")
+    public void chooseLexiconFromTheLexiconsList(String arg0) throws Throwable {
+        endUserSteps.chooseLexiconFromTheLexiconsList(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" lexicon page is opened$")
+    public void lexiconPageIsOpened(String arg0) throws Throwable {
+        endUserSteps.lexiconPageIsOpened(arg0);
+    }
 }

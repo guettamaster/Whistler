@@ -14,5 +14,8 @@ Feature: verifying violation displaying on the Inbox page
     Then "Risk Policies" link is displayed in the Left Navigation menu
     When click on "Risk Policies" link
     Then Expanded menu is appeared
-    Then "Lexicons" sub-link is displayed in the Expanded menu
-    When click on "Lexicons" sub-link
+    Then Lexicons sub-link is displayed in the Expanded menu
+    When click on Lexicons sub-link
+    Then Lexicons page is opened
+    When choose "Lexicon test November 2020" lexicon from the lexicons list
+    Then "Lexicon test November 2020" lexicon page is opened

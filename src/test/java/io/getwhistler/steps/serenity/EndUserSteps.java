@@ -68,4 +68,24 @@ public class EndUserSteps extends ScenarioSteps {
     public void expandedMenuIsAppeared() {
         Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.expandedMenuIsAppeared());
     }
+
+    public void lexiconsSubLinkIsDisplayedInTheExpandedMenu() {
+        Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.lexiconsSubLinkIsDisplayedInTheExpandedMenu());
+    }
+
+    public void clickOnLexiconsSubLink() {
+        cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.clickOnLexiconsSubLink();
+    }
+
+    public void lexiconsPageIsOpened() {
+        Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.lexiconsPageIsOpened());
+    }
+
+    public void chooseLexiconFromTheLexiconsList(String arg0) {
+        cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.chooseLexiconFromTheLexiconsList(arg0);
+    }
+
+    public void lexiconPageIsOpened(String arg0) {
+        Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.lexiconPageIsOpened(arg0));
+    }
 }

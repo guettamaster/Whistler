@@ -28,6 +28,29 @@ public class CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlocki
     public boolean expandedMenuIsAppeared() {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK)));
         return $(LOCATORS.EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK).isPresent();
+    }
 
+    public boolean lexiconsSubLinkIsDisplayedInTheExpandedMenu() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.LEXICONS_SUB_LINK)));
+        return $(LOCATORS.LEXICONS_SUB_LINK).isPresent();
+    }
+
+    public void clickOnLexiconsSubLink() {
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.LEXICONS_SUB_LINK));
+    }
+
+    public boolean lexiconsPageIsOpened() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.LEXICONS_TITLE)));
+        return $(LOCATORS.LEXICONS_TITLE).isPresent();
+    }
+
+    public void chooseLexiconFromTheLexiconsList(String arg0) {
+        withTimeoutOf(20, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(org.openqa.selenium.By.xpath(LOCATORS.LEXICONS_NAME_FROM_THE_LEXICONS_LIST.replace("$1", arg0))));
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.LEXICONS_NAME_FROM_THE_LEXICONS_LIST.replace("$1", arg0)));
+    }
+
+    public boolean lexiconPageIsOpened(String arg0) {
+        withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.LEXICON_PAGE_BREADCRUMB.replace("$1", arg0))));
+        return $(LOCATORS.LEXICON_PAGE_BREADCRUMB.replace("$1", arg0)).isPresent();
     }
 }
