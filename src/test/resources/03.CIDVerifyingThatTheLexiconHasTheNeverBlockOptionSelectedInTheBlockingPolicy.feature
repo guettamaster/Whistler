@@ -19,3 +19,7 @@ Feature: verifying violation displaying on the Inbox page
     Then Lexicons page is opened
     When choose "Lexicon test November 2020" lexicon from the lexicons list
     Then "Lexicon test November 2020" lexicon page is opened
+    Then Edit lexicon button is displayed
+    When click on Edit lexicon button
+    Then Edit Lexicon pop-up is appeared
+    Then Never Block radio button is selected

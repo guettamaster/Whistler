@@ -23,7 +23,16 @@ public interface LOCATORS {
     String LINK_IN_THE_LEFT_NAV_MENU = "//span[@class='nav-label'][.='$1']";
     String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
     String LEXICONS_SUB_LINK = "//a[@href='/riskpolicies/lexicons']/i[@class='fa fa-book']";
+
+//TODO======================================================CIDLexiconsPage========================================================
+
     String LEXICONS_TITLE = "//h2[.='Lexicons']";
     String LEXICONS_NAME_FROM_THE_LEXICONS_LIST = "//td[@class='name-column font-bold']/a[.='$1']";
+
+//TODO======================================================CIDLexiconPage========================================================
+
     String LEXICON_PAGE_BREADCRUMB = "//li[@class='active']/strong[.='$1']";
+    String EDIT_LEXICON_BUTTON = "//a[@id='editLexicon']";
+    String EDIT_LEXICON_POPUP = "//h3[@class='modal-title']";
+    String SELECTED_NEVER_BLOCK_RADIO_BUTTON = "//label[@for='Unblocked']//ancestor::div[@class='radio radio-warning']/input[@id='IsBlocking']";
 }

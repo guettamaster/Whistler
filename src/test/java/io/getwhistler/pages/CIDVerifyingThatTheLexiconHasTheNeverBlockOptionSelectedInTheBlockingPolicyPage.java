@@ -53,4 +53,23 @@ public class CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlocki
         withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.LEXICON_PAGE_BREADCRUMB.replace("$1", arg0))));
         return $(LOCATORS.LEXICON_PAGE_BREADCRUMB.replace("$1", arg0)).isPresent();
     }
+
+    public boolean editLexiconButtonIsDisplayed() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.EDIT_LEXICON_BUTTON)));
+        return $(LOCATORS.EDIT_LEXICON_BUTTON).isPresent();
+    }
+
+    public void clickOnEditLexiconButton() {
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.EDIT_LEXICON_BUTTON));
+    }
+
+    public boolean editLexiconPopUpIsAppeared() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.EDIT_LEXICON_POPUP)));
+        return $(LOCATORS.EDIT_LEXICON_POPUP).isPresent();
+    }
+
+    public boolean neverBlockRadioButtonIsSelected() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.SELECTED_NEVER_BLOCK_RADIO_BUTTON)));
+        return $(LOCATORS.SELECTED_NEVER_BLOCK_RADIO_BUTTON).isPresent();
+    }
 }

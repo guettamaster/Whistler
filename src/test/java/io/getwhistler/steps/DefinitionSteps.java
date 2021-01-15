@@ -106,4 +106,24 @@ public class DefinitionSteps {
     public void lexiconPageIsOpened(String arg0) throws Throwable {
         endUserSteps.lexiconPageIsOpened(arg0);
     }
+
+    @Then("^Edit lexicon button is displayed$")
+    public void editLexiconButtonIsDisplayed() {
+        endUserSteps.editLexiconButtonIsDisplayed();
+    }
+
+    @When("^click on Edit lexicon button$")
+    public void clickOnEditLexiconButton() {
+        endUserSteps.clickOnEditLexiconButton();
+    }
+
+    @Then("^Edit Lexicon pop-up is appeared$")
+    public void editLexiconPopUpIsAppeared() {
+        endUserSteps.editLexiconPopUpIsAppeared();
+    }
+
+    @Then("^Never Block radio button is selected$")
+    public void neverBlockRadioButtonIsSelected() {
+        endUserSteps.neverBlockRadioButtonIsSelected();
+    }
 }
