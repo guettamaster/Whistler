@@ -126,4 +126,14 @@ public class DefinitionSteps {
     public void neverBlockRadioButtonIsSelected() {
         endUserSteps.neverBlockRadioButtonIsSelected();
     }
+
+    @When("^open new tab$")
+    public void openNewTab() throws Throwable {
+        endUserSteps.openNewTab();
+    }
+
+    @When("^enter \"([^\"]*)\" word in the tab$")
+    public void enterWordInTheTab(String url) throws Throwable {
+        endUserSteps.enterWordInTheTab(url);
+    }
 }

@@ -1,4 +1,4 @@
-Feature: verifying violation displaying on the Inbox page
+Feature: verifying that lexicon has the Never Block option selected in the Blocking Policy
 
   Background: Check that "Dashboard" page is opened
     Given open authentication page

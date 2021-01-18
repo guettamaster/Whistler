@@ -4,6 +4,7 @@ import io.getwhistler.LOCATORS;
 import io.getwhistler.pages.CIDSignInPage;
 import io.getwhistler.pages.CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage;
 import io.getwhistler.pages.EMDSignInPage;
+import io.getwhistler.pages.EMDVerifyingThatViolationIsCreatedAndDisplayedPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.junit.Assert;
@@ -13,6 +14,7 @@ public class EndUserSteps extends ScenarioSteps {
     EMDSignInPage emdSignInPage;
     CIDSignInPage cidSignInPage;
     CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage;
+    EMDVerifyingThatViolationIsCreatedAndDisplayedPage emdVerifyingThatViolationIsCreatedAndDisplayedPage;
 
     //======================================================SignInPage===================================================
 
@@ -103,5 +105,13 @@ public class EndUserSteps extends ScenarioSteps {
 
     public void neverBlockRadioButtonIsSelected() {
         Assert.assertTrue("False", cidVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.neverBlockRadioButtonIsSelected());
+    }
+
+    public void openNewTab() throws Throwable {
+        emdVerifyingThatViolationIsCreatedAndDisplayedPage.openNewTab();
+    }
+
+    public void enterWordInTheTab(String url) {
+        emdVerifyingThatViolationIsCreatedAndDisplayedPage.enterWordInTheTab(url);
     }
 }
