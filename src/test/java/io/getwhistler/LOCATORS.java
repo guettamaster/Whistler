@@ -4,7 +4,7 @@ import org.yecht.Data;
 
 public interface LOCATORS {
 
-//TODO======================================================SignInPage========================================================
+//TODO======================================================SignInPage============================================================
 
     String EMAIL_ADDRESS_FIELD = "//input[@placeholder='Your Email Address']";
     String NEXT_BUTTON = "//span[@class='ladda-label'][.='Next']";
@@ -12,20 +12,24 @@ public interface LOCATORS {
     String PASSWORD_FIELD = "//input[@placeholder='Enter your password']";
     String SIGNIN_BUTTON = "//span[@class='ladda-label'][.='Sign In']";
 
-//TODO======================================================EMDInboxAfterSuccessfulAuthorizationPage========================================================
+//TODO======================================================EMDInboxAfterSuccessfulAuthorizationPage==============================
 
     String USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION = "//strong[@class='font-bold'][.='$1']";
     String CATEGORIES_TITLE = "//h5[.='Categories']";
 
 
-//TODO======================================================CIDDashboardAfterSuccessfulAuthorizationPage========================================================
+//TODO======================================================CIDDashboardAfterSuccessfulAuthorizationPage==========================
 
     String DASHBOARD_GENERAL_TABLES = "//li[@class='active'][.='Application Access Logs']";
     String LINK_IN_THE_LEFT_NAV_MENU = "//span[@class='nav-label'][.='$1']";
     String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
     String LEXICONS_SUB_LINK = "//a[@href='/riskpolicies/lexicons']/i[@class='fa fa-book']";
 
-//TODO======================================================CIDLexiconsPage========================================================
+//TODO
+
+    String DASHBOARD_TITLE = "//div[@class='selected-inbox-title'][contains(text(),'Open Issue')]";
+
+//TODO======================================================CIDLexiconsPage=======================================================
 
     String LEXICONS_TITLE = "//h2[.='Lexicons']";
     String LEXICONS_NAME_FROM_THE_LEXICONS_LIST = "//td[@class='name-column font-bold']/a[.='$1']";
@@ -36,4 +40,11 @@ public interface LOCATORS {
     String EDIT_LEXICON_BUTTON = "//a[@id='editLexicon']";
     String EDIT_LEXICON_POPUP = "//h3[@class='modal-title']";
     String SELECTED_NEVER_BLOCK_RADIO_BUTTON = "//label[@for='Unblocked']//ancestor::div[@class='radio radio-warning']/input[@id='IsBlocking']";
+
+//TODO======================================================GoogleSearchPage========================================================
+
+    String GOOGLE_INPUT_FIELD = "//input[@class='gLFyf gsfi']";
+
+
+    String VIOLATION_WORD = "Value='$1'";
 }

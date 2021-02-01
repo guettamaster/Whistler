@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage extends net.serenitybdd.core.pages.PageObject {
 
-    private static Logger logger = LoggerFactory.getLogger(CIDSignInPage.class);
+    private static Logger logger = LoggerFactory.getLogger(CIDVerifyingThatTheLexiconHasTheNeverBlockOptionSelectedInTheBlockingPolicyPage.class);
 
     public boolean linkIsDisplayedInTheLeftNavigationMenu(String arg0) {
         withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.DASHBOARD_GENERAL_TABLES.replace("$1", arg0))));

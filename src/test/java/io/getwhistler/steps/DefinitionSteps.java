@@ -127,13 +127,18 @@ public class DefinitionSteps {
         endUserSteps.neverBlockRadioButtonIsSelected();
     }
 
-    @When("^open new tab$")
-    public void openNewTab() throws Throwable {
-        endUserSteps.openNewTab();
+    @When("^send violation word$")
+    public void SendViolationWord() throws Throwable {
+        endUserSteps.SendViolationWord();
     }
 
-    @When("^enter \"([^\"]*)\" word in the tab$")
-    public void enterWordInTheTab(String url) throws Throwable {
-        endUserSteps.enterWordInTheTab(url);
+    @Given("^open RA authentication page$")
+    public void openRAAuthenticationPage() {
+        endUserSteps.openRAAuthenticationPage();
+    }
+
+    @Then("^RA Inbox page is displayed$")
+    public void raInboxPageIsDisplayed() {
+        endUserSteps.raInboxPageIsDisplayed();
     }
 }
