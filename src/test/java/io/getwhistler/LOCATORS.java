@@ -44,6 +44,7 @@ public interface LOCATORS {
 //TODO======================================================GoogleSearchPage========================================================
 
     String GOOGLE_INPUT_FIELD = "//input[@class='gLFyf gsfi']";
+    String ENTER_BUTTON = "//div[@class='gb_Lf']/a[.='Увійти']";
 
 
     String VIOLATION_WORD = "Value='$1'";

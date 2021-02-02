@@ -14,6 +14,7 @@ public class EndUserSteps extends ScenarioSteps {
 //    EMDVerifyingThatViolationIsCreatedAndDisplayedPage emdVerifyingThatViolationIsCreatedAndDisplayedPage;
     NotepadTest notepadTest;
     RASignInPage raSignInPage;
+    RAVerfyingThatViolationSentAndDisplayedOnEmailPage raVerfyingThatViolationSentAndDisplayedOnEmailPage;
 
     //======================================================SignInPage===================================================
 
@@ -116,6 +117,13 @@ public class EndUserSteps extends ScenarioSteps {
 
     public void raInboxPageIsDisplayed() {
         Assert.assertTrue("False", raSignInPage.raInboxPageIsDisplayed());
+    }
 
+    public void openGoogleStartPage() {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.open();
+    }
+
+    public void clickOnTheEnterButton() {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheEnterButton();
     }
 }

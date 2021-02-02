@@ -141,4 +141,14 @@ public class DefinitionSteps {
     public void raInboxPageIsDisplayed() {
         endUserSteps.raInboxPageIsDisplayed();
     }
+
+    @Given("^open google start page$")
+    public void openGoogleStartPage() {
+        endUserSteps.openGoogleStartPage();
+    }
+
+    @When("^click on the Enter button$")
+    public void clickOnTheEnterButton() {
+        endUserSteps.clickOnTheEnterButton();
+    }
 }
