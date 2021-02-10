@@ -44,7 +44,14 @@ public interface LOCATORS {
 //TODO======================================================GoogleSearchPage========================================================
 
     String GOOGLE_INPUT_FIELD = "//input[@class='gLFyf gsfi']";
-    String ENTER_BUTTON = "//div[@class='gb_Lf']/a[.='Увійти']";
+    String ENTER_BUTTON = "//a[@class='fuji-button-link fuji-button-text fuji-button-inverted']";
+    String EMAIL_INPUT_FILED = "//input[@id='login-username']";
+    String GOOGLE_NEXT_BUTTON = "//input[@id='login-signin']";
+    String EMAIL_ABOVE_PASSWORD_INPUT_FIELD = "//div[@class='yid'][.='$1']";
+    String PASSWORD_INPUT_FIELD = "//input[@id='login-passwd']";
+    String GOOGLE_NEXT_BUTTON_BELOW_PASSWORD_FIELD = "//button[@id='login-signin']";
+    String USER_ICON_ON_THE_MAILBOX_PAGE = "(//img[@alt='Profile image'])[1]";
+    String EMAIL_AFTER_SUCCESSFUL_AUTHORIZATION = "//span[@class='_yb_1gh1f _yb_m78yl _yb_vpxpz'][.='$1']";
 
 
     String VIOLATION_WORD = "Value='$1'";

@@ -151,4 +151,44 @@ public class DefinitionSteps {
     public void clickOnTheEnterButton() {
         endUserSteps.clickOnTheEnterButton();
     }
+
+    @Then("^title is displayed on Yahoo Email page$")
+    public void titleIsDisplayedOnYahooEmailPage() {
+        endUserSteps.titleIsDisplayedOnYahooEmailPage();
+    }
+
+    @When("^enter \"([^\"]*)\" email in the Yahoo Email Address field$")
+    public void enterEmailInTheYahooEmailAddressField(String arg0) throws Throwable {
+        endUserSteps.enterEmailInTheYahooEmailAddressField(arg0);
+    }
+
+    @When("^click on the Next button on Yahoo Email page$")
+    public void clickOnTheNextButtonOnYahooEmailPage() {
+        endUserSteps.clickOnTheNextButtonOnYahooEmailPage();
+    }
+
+    @Then("^\"([^\"]*)\" email is appeared on the top$")
+    public void emailIsAppearedOnTheTop(String arg0) throws Throwable {
+        endUserSteps.emailIsAppearedOnTheTop(arg0);
+    }
+
+    @When("^enter \"([^\"]*)\" password in the Yahoo Password field$")
+    public void enterPasswordInTheYahooPasswordField(String arg0) throws Throwable {
+        endUserSteps.enterPasswordInTheYahooPasswordField(arg0);
+    }
+
+    @When("^click on the Next button below password field on Yahoo Email page$")
+    public void clickOnTheNextButtonBelowPasswordFieldOnYahooEmailPage() {
+        endUserSteps.clickOnTheNextButtonBelowPasswordFieldOnYahooEmailPage();
+    }
+
+    @When("^navigate on user icon$")
+    public void navigateOnUserIcon() {
+        endUserSteps.navigateOnUserIcon();
+    }
+
+    @Then("^\"([^\"]*)\" account is connected$")
+    public void accountIsConnected(String arg0) throws Throwable {
+        endUserSteps.accountIsConnected(arg0);
+    }
 }
