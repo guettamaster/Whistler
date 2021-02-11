@@ -31,7 +31,7 @@ public class RAVerfyingThatViolationSentAndDisplayedOnEmailPage extends net.sere
     }
 
     public void clickOnTheNextButtonOnYahooEmailPage() {
-        evaluateJavascript("arguments[0].click();", $(LOCATORS.GOOGLE_NEXT_BUTTON));
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.YAHOO_NEXT_BUTTON));
     }
 
     public boolean emailIsAppearedOnTheTop(String arg0) {
@@ -45,19 +45,39 @@ public class RAVerfyingThatViolationSentAndDisplayedOnEmailPage extends net.sere
     }
 
     public void clickOnTheNextButtonBelowPasswordFieldOnYahooEmailPage() {
-        evaluateJavascript("arguments[0].click();", $(LOCATORS.GOOGLE_NEXT_BUTTON_BELOW_PASSWORD_FIELD));
-        waitABit(5000);
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.YAHOO_NEXT_BUTTON_BELOW_PASSWORD_FIELD));
     }
 
     public void navigateOnUserIcon() {
         Actions actions = new Actions(getDriver());
         actions.moveToElement(findBy(LOCATORS.USER_ICON_ON_THE_MAILBOX_PAGE)).build().perform();
-        waitABit(5000);
     }
 
     public boolean accountIsConnected(String arg0) {
         withTimeoutOf(10, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.EMAIL_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0))));
         return $(LOCATORS.EMAIL_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0)).isPresent();
+    }
+
+    public void clickOnComposeButtonInTheLeftNavigationMenu() {
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.COMPOSE_BUTTON));
+    }
+
+    public boolean sendMessageFormIsDisplayed() {
+        withTimeoutOf(15, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SEND_MESSAGE_FORM)));
+        return $(LOCATORS.SEND_MESSAGE_FORM).isPresent();
+    }
+
+    public void enterEmailInTheToField(String arg0) {
+        $(LOCATORS.TO_FIELD_IN_THE_MESSAGE_FORM.replace("$1", arg0)).sendKeys(arg0);
+    }
+
+    public void enterSubjectInTheSubjectField(String arg0) {
+        $(LOCATORS.SUBJECT_FIELD_IN_THE_MESSAGE_FORM.replace("$1", arg0)).sendKeys(arg0);
+    }
+
+    public void enterMessageInTheMessageField(String arg0) {
+        $(LOCATORS.MESSAGE_FIELD_IN_THE_MESSAGE_FORM.replace("$1", arg0)).sendKeys(arg0);
+        waitABit(2000);
     }
 }
 

@@ -44,14 +44,22 @@ public interface LOCATORS {
 //TODO======================================================GoogleSearchPage========================================================
 
     String GOOGLE_INPUT_FIELD = "//input[@class='gLFyf gsfi']";
+
+//TODO======================================================YahooMailboxPage========================================================
+
     String ENTER_BUTTON = "//a[@class='fuji-button-link fuji-button-text fuji-button-inverted']";
     String EMAIL_INPUT_FILED = "//input[@id='login-username']";
-    String GOOGLE_NEXT_BUTTON = "//input[@id='login-signin']";
+    String YAHOO_NEXT_BUTTON = "//input[@id='login-signin']";
     String EMAIL_ABOVE_PASSWORD_INPUT_FIELD = "//div[@class='yid'][.='$1']";
     String PASSWORD_INPUT_FIELD = "//input[@id='login-passwd']";
-    String GOOGLE_NEXT_BUTTON_BELOW_PASSWORD_FIELD = "//button[@id='login-signin']";
+    String YAHOO_NEXT_BUTTON_BELOW_PASSWORD_FIELD = "//button[@id='login-signin']";
     String USER_ICON_ON_THE_MAILBOX_PAGE = "(//img[@alt='Profile image'])[1]";
     String EMAIL_AFTER_SUCCESSFUL_AUTHORIZATION = "//span[@class='_yb_1gh1f _yb_m78yl _yb_vpxpz'][.='$1']";
+    String COMPOSE_BUTTON = "//a[@aria-label='Compose']";
+    String SEND_MESSAGE_FORM = "//div[@data-test-id='compose-styler']";
+    String TO_FIELD_IN_THE_MESSAGE_FORM = "//input[@id='message-to-field']";
+    String SUBJECT_FIELD_IN_THE_MESSAGE_FORM = "//input[@aria-label='Subject']";
+    String MESSAGE_FIELD_IN_THE_MESSAGE_FORM = "//div[@aria-label='Message body']";
 
 
     String VIOLATION_WORD = "Value='$1'";

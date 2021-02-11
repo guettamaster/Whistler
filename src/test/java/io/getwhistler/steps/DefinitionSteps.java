@@ -191,4 +191,29 @@ public class DefinitionSteps {
     public void accountIsConnected(String arg0) throws Throwable {
         endUserSteps.accountIsConnected(arg0);
     }
+
+    @When("^click on Compose button in the left navigation menu$")
+    public void clickOnComposeButtonInTheLeftNavigationMenu() {
+        endUserSteps.clickOnComposeButtonInTheLeftNavigationMenu();
+    }
+
+    @Then("^send message form is displayed$")
+    public void sendMessageFormIsDisplayed() {
+        endUserSteps.sendMessageFormIsDisplayed();
+    }
+
+    @When("^enter \"([^\"]*)\" email in the To field$")
+    public void enterEmailInTheToField(String arg0) throws Throwable {
+        endUserSteps.enterEmailInTheToField(arg0);
+    }
+
+    @When("^enter \"([^\"]*)\" subject in the Subject field$")
+    public void enterSubjectInTheSubjectField(String arg0) throws Throwable {
+        endUserSteps.enterSubjectInTheSubjectField(arg0);
+    }
+
+    @When("^enter \"([^\"]*)\" message in the Message field$")
+    public void enterMessageInTheMessageField(String arg0) throws Throwable {
+        endUserSteps.enterMessageInTheMessageField(arg0);
+    }
 }

@@ -191,4 +191,29 @@ public class EndUserSteps extends ScenarioSteps {
     public void accountIsConnected(String arg0) {
         Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.accountIsConnected(arg0));
     }
+
+    @Step
+    public void clickOnComposeButtonInTheLeftNavigationMenu() {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnComposeButtonInTheLeftNavigationMenu();
+    }
+
+    @Step
+    public void sendMessageFormIsDisplayed() {
+        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.sendMessageFormIsDisplayed());
+    }
+
+    @Step
+    public void enterEmailInTheToField(String arg0) {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterEmailInTheToField(arg0);
+    }
+
+    @Step
+    public void enterSubjectInTheSubjectField(String arg0) {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterSubjectInTheSubjectField(arg0);
+    }
+
+    @Step
+    public void enterMessageInTheMessageField(String arg0) {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterMessageInTheMessageField(arg0);
+    }
 }

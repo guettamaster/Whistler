@@ -16,4 +16,5 @@ Feature: verifying that violation is sent and displayed on email
     When enter "frank@traden.onmicrosoft.com" email in the To field
     When enter "test message" subject in the Subject field
     When enter "beaner word" message in the Message field
-    When click on Send button
+#    When click on Send button
+#    Then "You message has been sent" message is appeared
