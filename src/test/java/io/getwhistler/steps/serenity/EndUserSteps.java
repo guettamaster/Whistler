@@ -216,4 +216,19 @@ public class EndUserSteps extends ScenarioSteps {
     public void enterMessageInTheMessageField(String arg0) {
         raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterMessageInTheMessageField(arg0);
     }
+
+    @Step
+    public void clickOnSendButton() {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnSendButton();
+    }
+
+    @Step
+    public void openRALoginPage() {
+        raVerfyingThatViolationSentAndDisplayedOnEmailPage.openRALoginPage();
+    }
+
+    @Step
+    public void fromMikeFoyleIsDisplayed(String arg0) {
+        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.fromMikeFoyleIsDisplayed(arg0));
+    }
 }

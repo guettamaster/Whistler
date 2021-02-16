@@ -16,5 +16,13 @@ Feature: verifying that violation is sent and displayed on email
     When enter "frank@traden.onmicrosoft.com" email in the To field
     When enter "test message" subject in the Subject field
     When enter "beaner word" message in the Message field
-#    When click on Send button
-#    Then "You message has been sent" message is appeared
+    When click on Send button
+    When open RA login page
+    When enter "o.ivankovckyi@aimprosoft.com" email in the Email Address field
+    When click on the Next button
+    Then "o.ivankovckyi@aimprosoft.com" email is displayed above Password field
+    When enter "Ivanoleg150288#" password in the Password field
+    When click on Sign In button
+    Then "Oleg Ivankovskyi" user name is displayed in the left navigation menu
+    Then RA Inbox page is displayed
+    Then "test message" from Mike Foyle is displayed

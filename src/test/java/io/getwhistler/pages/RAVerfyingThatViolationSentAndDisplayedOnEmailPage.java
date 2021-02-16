@@ -8,7 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.util.concurrent.TimeUnit;
 import java.time.temporal.ChronoUnit;
 
 @DefaultUrl("https://mail.yahoo.com/")
@@ -77,7 +76,19 @@ public class RAVerfyingThatViolationSentAndDisplayedOnEmailPage extends net.sere
 
     public void enterMessageInTheMessageField(String arg0) {
         $(LOCATORS.MESSAGE_FIELD_IN_THE_MESSAGE_FORM.replace("$1", arg0)).sendKeys(arg0);
-        waitABit(2000);
+    }
+
+    public void clickOnSendButton() {
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.SEND_BUTTON_IN_THE_MESSAGE_FORM));
+    }
+
+    public void openRALoginPage() {
+        getDriver().get("https://dashboard.getwhistler.io/");
+    }
+
+    public boolean fromMikeFoyleIsDisplayed(String arg0) {
+        withTimeoutOf(30, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL.replace("$1", arg0))));
+        return $(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL.replace("$1", arg0)).isPresent();
     }
 }
 

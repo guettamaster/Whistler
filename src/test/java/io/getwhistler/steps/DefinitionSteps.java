@@ -216,4 +216,19 @@ public class DefinitionSteps {
     public void enterMessageInTheMessageField(String arg0) throws Throwable {
         endUserSteps.enterMessageInTheMessageField(arg0);
     }
+
+    @When("^click on Send button$")
+    public void clickOnSendButton() {
+        endUserSteps.clickOnSendButton();
+    }
+
+    @When("^open RA login page$")
+    public void openRALoginPage() {
+        endUserSteps.openRALoginPage();
+    }
+
+    @Then("^\"([^\"]*)\" from Mike Foyle is displayed$")
+    public void fromMikeFoyleIsDisplayed(String arg0) throws Throwable {
+        endUserSteps.fromMikeFoyleIsDisplayed(arg0);
+    }
 }

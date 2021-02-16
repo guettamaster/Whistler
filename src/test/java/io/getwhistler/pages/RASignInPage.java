@@ -9,7 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
-@DefaultUrl("https://test-dashboard.getwhistler.io/")
+@DefaultUrl("https://dashboard.getwhistler.io/")
+//https://test-dashboard.getwhistler.io/
 
 public class RASignInPage extends net.serenitybdd.core.pages.PageObject {
 

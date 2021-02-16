@@ -25,9 +25,10 @@ public interface LOCATORS {
     String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
     String LEXICONS_SUB_LINK = "//a[@href='/riskpolicies/lexicons']/i[@class='fa fa-book']";
 
-//TODO
+//TODO======================================================RADashboardAfterSuccessfulAuthorizationPage==========================
 
     String DASHBOARD_TITLE = "//div[@class='selected-inbox-title'][contains(text(),'Open Issue')]";
+    String SENT_MESSAGE_FROM_THE_YAHOO_MAIL = "(//a[@class='participant-name']/span[contains(text(),'Mike Foyle')]//ancestor::tr[@class='unread']//a[@class='communication-message'][contains(text(),'$1')])[1]";
 
 //TODO======================================================CIDLexiconsPage=======================================================
 
@@ -60,6 +61,7 @@ public interface LOCATORS {
     String TO_FIELD_IN_THE_MESSAGE_FORM = "//input[@id='message-to-field']";
     String SUBJECT_FIELD_IN_THE_MESSAGE_FORM = "//input[@aria-label='Subject']";
     String MESSAGE_FIELD_IN_THE_MESSAGE_FORM = "//div[@aria-label='Message body']";
+    String SEND_BUTTON_IN_THE_MESSAGE_FORM = "//button[@title='Send this email']";
 
 
     String VIOLATION_WORD = "Value='$1'";
