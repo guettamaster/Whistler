@@ -14,7 +14,8 @@ public class EndUserSteps extends ScenarioSteps {
 //    EMDVerifyingThatViolationIsCreatedAndDisplayedPage emdVerifyingThatViolationIsCreatedAndDisplayedPage;
     NotepadTest notepadTest;
     RASignInPage raSignInPage;
-    RAVerfyingThatViolationSentAndDisplayedOnEmailPage raVerfyingThatViolationSentAndDisplayedOnEmailPage;
+    RAVerifyingThatViolationSentAndDisplayedOnEmailPage raVerifyingThatViolationSentAndDisplayedOnEmailPage;
+    RAVerifyingTheContentInsideTheEmailWithTheViolationPage raVerfyingTheContentInsideTheEmailWithTheViolationPage;
 
     //======================================================SignInPage===================================================
 
@@ -145,90 +146,100 @@ public class EndUserSteps extends ScenarioSteps {
 
     @Step
     public void openGoogleStartPage() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.open();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.open();
     }
 
     @Step
     public void clickOnTheEnterButton() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheEnterButton();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheEnterButton();
     }
 
     @Step
     public void titleIsDisplayedOnYahooEmailPage() {
-        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.titleIsDisplayedOnYahooEmailPage());
+        Assert.assertTrue("False", raVerifyingThatViolationSentAndDisplayedOnEmailPage.titleIsDisplayedOnYahooEmailPage());
     }
 
     @Step
     public void enterEmailInTheYahooEmailAddressField(String arg0) {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterEmailInTheYahooEmailAddressField(arg0);
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.enterEmailInTheYahooEmailAddressField(arg0);
     }
 
     @Step
     public void clickOnTheNextButtonOnYahooEmailPage() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheNextButtonOnYahooEmailPage();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheNextButtonOnYahooEmailPage();
     }
 
     @Step
     public void emailIsAppearedOnTheTop(String arg0) {
-        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.emailIsAppearedOnTheTop(arg0));
+        Assert.assertTrue("False", raVerifyingThatViolationSentAndDisplayedOnEmailPage.emailIsAppearedOnTheTop(arg0));
     }
 
     @Step
     public void enterPasswordInTheYahooPasswordField(String arg0) {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterPasswordInTheYahooPasswordField(arg0);
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.enterPasswordInTheYahooPasswordField(arg0);
     }
     @Step
     public void clickOnTheNextButtonBelowPasswordFieldOnYahooEmailPage() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheNextButtonBelowPasswordFieldOnYahooEmailPage();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.clickOnTheNextButtonBelowPasswordFieldOnYahooEmailPage();
     }
 
     @Step
     public void navigateOnUserIcon() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.navigateOnUserIcon();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.navigateOnUserIcon();
     }
 
     @Step
     public void accountIsConnected(String arg0) {
-        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.accountIsConnected(arg0));
+        Assert.assertTrue("False", raVerifyingThatViolationSentAndDisplayedOnEmailPage.accountIsConnected(arg0));
     }
 
     @Step
     public void clickOnComposeButtonInTheLeftNavigationMenu() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnComposeButtonInTheLeftNavigationMenu();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.clickOnComposeButtonInTheLeftNavigationMenu();
     }
 
     @Step
     public void sendMessageFormIsDisplayed() {
-        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.sendMessageFormIsDisplayed());
+        Assert.assertTrue("False", raVerifyingThatViolationSentAndDisplayedOnEmailPage.sendMessageFormIsDisplayed());
     }
 
     @Step
     public void enterEmailInTheToField(String arg0) {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterEmailInTheToField(arg0);
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.enterEmailInTheToField(arg0);
     }
 
     @Step
     public void enterSubjectInTheSubjectField(String arg0) {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterSubjectInTheSubjectField(arg0);
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.enterSubjectInTheSubjectField(arg0);
     }
 
     @Step
     public void enterMessageInTheMessageField(String arg0) {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.enterMessageInTheMessageField(arg0);
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.enterMessageInTheMessageField(arg0);
     }
 
     @Step
     public void clickOnSendButton() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.clickOnSendButton();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.clickOnSendButton();
     }
 
     @Step
     public void openRALoginPage() {
-        raVerfyingThatViolationSentAndDisplayedOnEmailPage.openRALoginPage();
+        raVerifyingThatViolationSentAndDisplayedOnEmailPage.openRALoginPage();
     }
 
     @Step
     public void fromMikeFoyleIsDisplayed(String arg0) {
-        Assert.assertTrue("False", raVerfyingThatViolationSentAndDisplayedOnEmailPage.fromMikeFoyleIsDisplayed(arg0));
+        Assert.assertTrue("False", raVerifyingThatViolationSentAndDisplayedOnEmailPage.fromMikeFoyleIsDisplayed(arg0));
+    }
+
+    @Step
+    public void clickOnTheFromMikeFoyle(String arg0) {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.clickOnTheFromMikeFoyle(arg0);
+    }
+
+    @Step
+    public void isOpened(String arg0) {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.isOpened(arg0));
     }
 }

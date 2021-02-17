@@ -231,4 +231,14 @@ public class DefinitionSteps {
     public void fromMikeFoyleIsDisplayed(String arg0) throws Throwable {
         endUserSteps.fromMikeFoyleIsDisplayed(arg0);
     }
+
+    @When("^click on the \"([^\"]*)\" from Mike Foyle$")
+    public void clickOnTheFromMikeFoyle(String arg0) throws Throwable {
+        endUserSteps.clickOnTheFromMikeFoyle(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" is opened$")
+    public void isOpened(String arg0) throws Throwable {
+        endUserSteps.isOpened(arg0);
+    }
 }
