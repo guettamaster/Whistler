@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.time.temporal.ChronoUnit;
+import java.util.concurrent.TimeUnit;
 
 @DefaultUrl("https://test-dashboard.getwhistler.io/")
 //https://dashboard.getwhistler.io/
@@ -17,11 +18,12 @@ public class RAVerifyingTheContentInsideTheEmailWithTheViolationPage extends net
     private static Logger logger = LoggerFactory.getLogger(RASignInPage.class);
 
     public void clickOnTheFromMikeFoyle(String arg0) {
-        evaluateJavascript("arguments[0].click();", $(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL));
+        withTimeoutOf(20, ChronoUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(org.openqa.selenium.By.xpath(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL.replace("$1", arg0))));
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL.replace("$1", arg0)));
     }
 
     public boolean isOpened(String arg0) {
-        withTimeoutOf(30, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS..replace("$1", arg0))));
-        return $(LOCATORS..replace("$1", arg0)).isPresent();
+        withTimeoutOf(30, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS.MESSAGE_DETAILS_POPUP.replace("$1", arg0))));
+        return $(LOCATORS.MESSAGE_DETAILS_POPUP.replace("$1", arg0)).isPresent();
     }
 }

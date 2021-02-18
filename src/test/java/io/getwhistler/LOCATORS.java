@@ -25,10 +25,15 @@ public interface LOCATORS {
     String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
     String LEXICONS_SUB_LINK = "//a[@href='/riskpolicies/lexicons']/i[@class='fa fa-book']";
 
-//TODO======================================================RADashboardAfterSuccessfulAuthorizationPage==========================
+//TODO======================================================RADashboardAfterSuccessfulAuthorizationPage===========================
 
     String DASHBOARD_TITLE = "//div[@class='selected-inbox-title'][contains(text(),'Open Issue')]";
     String SENT_MESSAGE_FROM_THE_YAHOO_MAIL = "(//a[@class='participant-name']/span[contains(text(),'Mike Foyle')]//ancestor::tr[@class='unread']//a[@class='communication-message'][contains(text(),'$1')])[1]";
+
+//TODO======================================================RAMessageDetailsPopup=================================================
+
+    String MESSAGE_DETAILS_POPUP = "//div[contains(text(),'$1')]";
+
 
 //TODO======================================================CIDLexiconsPage=======================================================
 
@@ -42,11 +47,11 @@ public interface LOCATORS {
     String EDIT_LEXICON_POPUP = "//h3[@class='modal-title']";
     String SELECTED_NEVER_BLOCK_RADIO_BUTTON = "//label[@for='Unblocked']//ancestor::div[@class='radio radio-warning']/input[@id='IsBlocking']";
 
-//TODO======================================================GoogleSearchPage========================================================
+//TODO======================================================GoogleSearchPage======================================================
 
     String GOOGLE_INPUT_FIELD = "//input[@class='gLFyf gsfi']";
 
-//TODO======================================================YahooMailboxPage========================================================
+//TODO======================================================YahooMailboxPage======================================================
 
     String ENTER_BUTTON = "//a[@class='fuji-button-link fuji-button-text fuji-button-inverted']";
     String EMAIL_INPUT_FILED = "//input[@id='login-username']";
