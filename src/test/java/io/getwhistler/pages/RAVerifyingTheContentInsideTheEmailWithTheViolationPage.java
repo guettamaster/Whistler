@@ -18,12 +18,25 @@ public class RAVerifyingTheContentInsideTheEmailWithTheViolationPage extends net
     private static Logger logger = LoggerFactory.getLogger(RASignInPage.class);
 
     public void clickOnTheFromMikeFoyle(String arg0) {
-        withTimeoutOf(20, ChronoUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(org.openqa.selenium.By.xpath(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL.replace("$1", arg0))));
         evaluateJavascript("arguments[0].click();", $(LOCATORS.SENT_MESSAGE_FROM_THE_YAHOO_MAIL.replace("$1", arg0)));
     }
 
     public boolean isOpened(String arg0) {
         withTimeoutOf(30, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS.MESSAGE_DETAILS_POPUP.replace("$1", arg0))));
         return $(LOCATORS.MESSAGE_DETAILS_POPUP.replace("$1", arg0)).isPresent();
+    }
+
+    public boolean withHighRiskIsDisplayedOnTheOpenIssuesList(String arg0) {
+        withTimeoutOf(30, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS.HIGH_RISK_MESSAGE_ON_THE_OPEN_ISSUES_LIST.replace("$1", arg0))));
+        return $(LOCATORS.HIGH_RISK_MESSAGE_ON_THE_OPEN_ISSUES_LIST.replace("$1", arg0)).isPresent();
+    }
+
+    public void clickOnTheWithHighRisk(String arg0) {
+        evaluateJavascript("arguments[0].click();", $(LOCATORS.HIGH_RISK_MESSAGE_ON_THE_OPEN_ISSUES_LIST.replace("$1", arg0)));
+    }
+
+    public boolean withHighRiskIsDisplayedInTheMessageDetailsPopUp(String arg0) {
+        withTimeoutOf(30, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(net.serenitybdd.core.annotations.findby.By.xpath(LOCATORS.HIGH_RISK_LABEL_ON_THE_MESSAGE.replace("$1", arg0))));
+        return $(LOCATORS.HIGH_RISK_LABEL_ON_THE_MESSAGE.replace("$1", arg0)).isPresent();
     }
 }

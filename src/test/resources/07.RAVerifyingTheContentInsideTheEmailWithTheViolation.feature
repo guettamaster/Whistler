@@ -14,3 +14,11 @@ Feature: verifying the content inside the email with a violation
   Scenario: 7.001 Check that the email with a violation is opened
     When click on the "test message" from Mike Foyle
     Then "test message" is opened
+
+  Scenario: 7.002 Check that the risk from the "Open Issues" list matches the risk inside the email
+    Then "test message" with High risk is displayed on the Open Issues list
+    When click on the "test message" with High risk
+    Then "test message" is opened
+    Then "test message" with High risk is displayed in the Message Details pop-up
+
+  Scenario: 7.003 Check that the risk flag (taken from the list of flags) is correctly displayed in the "Open Issues" list and inside the email

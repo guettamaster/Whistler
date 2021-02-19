@@ -241,4 +241,19 @@ public class DefinitionSteps {
     public void isOpened(String arg0) throws Throwable {
         endUserSteps.isOpened(arg0);
     }
+
+    @Then("^\"([^\"]*)\" with High risk is displayed on the Open Issues list$")
+    public void withHighRiskIsDisplayedOnTheOpenIssuesList(String arg0) throws Throwable {
+        endUserSteps.withHighRiskIsDisplayedOnTheOpenIssuesList(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" with High risk$")
+    public void clickOnTheWithHighRisk(String arg0) throws Throwable {
+        endUserSteps.clickOnTheWithHighRisk(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" with High risk is displayed in the Message Details pop-up$")
+    public void withHighRiskIsDisplayedInTheMessageDetailsPopUp(String arg0) throws Throwable {
+        endUserSteps.withHighRiskIsDisplayedInTheMessageDetailsPopUp(arg0);
+    }
 }

@@ -29,10 +29,12 @@ public interface LOCATORS {
 
     String DASHBOARD_TITLE = "//div[@class='selected-inbox-title'][contains(text(),'Open Issue')]";
     String SENT_MESSAGE_FROM_THE_YAHOO_MAIL = "(//a[@class='participant-name']/span[contains(text(),'Mike Foyle')]//ancestor::tr[@class='unread']//a[@class='communication-message'][contains(text(),'$1')])[1]";
+    String HIGH_RISK_MESSAGE_ON_THE_OPEN_ISSUES_LIST = "(//a[@class='communication-message'][contains(text(),'$1')])[1]//ancestor::tr[@class='unread']//div/label[@_ngcontent-c10=''][contains(text(),'HIGH')]";
 
 //TODO======================================================RAMessageDetailsPopup=================================================
 
     String MESSAGE_DETAILS_POPUP = "//div[contains(text(),'$1')]";
+    String HIGH_RISK_LABEL_ON_THE_MESSAGE = "//div[contains(text(),'$1')]//ancestor::div[@class='modal-header']//label[@_ngcontent-c14=''][contains(text(),'HIGH')]";
 
 
 //TODO======================================================CIDLexiconsPage=======================================================

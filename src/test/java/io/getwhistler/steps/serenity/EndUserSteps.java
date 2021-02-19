@@ -242,4 +242,19 @@ public class EndUserSteps extends ScenarioSteps {
     public void isOpened(String arg0) {
         Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.isOpened(arg0));
     }
+
+    @Step
+    public void withHighRiskIsDisplayedOnTheOpenIssuesList(String arg0) {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.withHighRiskIsDisplayedOnTheOpenIssuesList(arg0));
+    }
+
+    @Step
+    public void clickOnTheWithHighRisk(String arg0) {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.clickOnTheWithHighRisk(arg0);
+    }
+
+    @Step
+    public void withHighRiskIsDisplayedInTheMessageDetailsPopUp(String arg0) {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.withHighRiskIsDisplayedInTheMessageDetailsPopUp(arg0));
+    }
 }
