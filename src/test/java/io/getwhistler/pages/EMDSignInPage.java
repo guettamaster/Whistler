@@ -7,7 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.util.concurrent.TimeUnit;
+import java.time.temporal.ChronoUnit;
 
 @DefaultUrl("https://endpoint-desktop.getwhistler.io/")
 
@@ -24,7 +24,7 @@ public class EMDSignInPage extends net.serenitybdd.core.pages.PageObject {
     }
 
     public boolean emailIsDisplayedAbovePasswordField(String arg0) {
-        withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.EMAIL_ABOVE_PASSWORD_FIELD.replace("$1", arg0))));
+        withTimeoutOf(10, ChronoUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.EMAIL_ABOVE_PASSWORD_FIELD.replace("$1", arg0))));
         return $(LOCATORS.EMAIL_ABOVE_PASSWORD_FIELD.replace("$1", arg0)).isPresent();
     }
 
@@ -33,17 +33,17 @@ public class EMDSignInPage extends net.serenitybdd.core.pages.PageObject {
     }
 
     public void clickOnSignInButton() {
-        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SIGNIN_BUTTON)));
+        withTimeoutOf(15, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SIGNIN_BUTTON)));
         $(LOCATORS.SIGNIN_BUTTON).click();
     }
 
     public boolean userNameIsDisplayedInTheLeftNavigationMenu(String arg0) {
-        withTimeoutOf(10, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0))));
+        withTimeoutOf(10, ChronoUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(LOCATORS.USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0))));
         return $(LOCATORS.USER_NAME_AFTER_SUCCESSFUL_AUTHORIZATION.replace("$1", arg0)).isPresent();
     }
 
     public boolean inboxPageIsDisplayed() {
-        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORIES_TITLE)));
+        withTimeoutOf(15, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORIES_TITLE)));
         return $(LOCATORS.CATEGORIES_TITLE).isPresent();
     }
 

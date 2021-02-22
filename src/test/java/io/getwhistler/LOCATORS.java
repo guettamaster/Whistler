@@ -24,6 +24,7 @@ public interface LOCATORS {
     String LINK_IN_THE_LEFT_NAV_MENU = "//span[@class='nav-label'][.='$1']";
     String EXPANDED_MENU_AFTER_CLICKING_RISK_POLICIES_LINK = "//ul[@class='nav nav-second-level collapse in']";
     String LEXICONS_SUB_LINK = "//a[@href='/riskpolicies/lexicons']/i[@class='fa fa-book']";
+    String FLAGS_SUB_LINK = "//a[@href='/riskpolicies/flags']/i[@class='fa fa-flag']";
 
 //TODO======================================================RADashboardAfterSuccessfulAuthorizationPage===========================
 
@@ -36,7 +37,6 @@ public interface LOCATORS {
     String MESSAGE_DETAILS_POPUP = "//div[contains(text(),'$1')]";
     String HIGH_RISK_LABEL_ON_THE_MESSAGE = "//div[contains(text(),'$1')]//ancestor::div[@class='modal-header']//label[@_ngcontent-c14=''][contains(text(),'HIGH')]";
 
-
 //TODO======================================================CIDLexiconsPage=======================================================
 
     String LEXICONS_TITLE = "//h2[.='Lexicons']";
@@ -48,6 +48,14 @@ public interface LOCATORS {
     String EDIT_LEXICON_BUTTON = "//a[@id='editLexicon']";
     String EDIT_LEXICON_POPUP = "//h3[@class='modal-title']";
     String SELECTED_NEVER_BLOCK_RADIO_BUTTON = "//label[@for='Unblocked']//ancestor::div[@class='radio radio-warning']/input[@id='IsBlocking']";
+
+//TODO======================================================CIDFlagsPage==========================================================
+
+    String FLAGS_TITLE = "//h2[.='Flags']";
+    String FLAGS_NAME_FROM_THE_FLAGS_LIST = "//td[@class='name-column font-bold']/a[.='$1']";
+    String HIGH_RISK_FLAG_ON_THE_FLAGS_LIST = "//a[@data-item-id='1982'][.='$1']//ancestor::tr//td[@class='text-uppercase']/span[contains(text(),'High')]";
+    String FLAG_POPUP_VALUE = "//input[@id='Words'][@value='$1']";
+    String HIGH_RISK_FLAG_INSIDE_THE_FLAG_POPUP = "//input[@value='$1']//ancestor::div[@class='modal-body']//label[@class='text-uppercase label-danger'][contains(text(),'High')]";
 
 //TODO======================================================GoogleSearchPage======================================================
 

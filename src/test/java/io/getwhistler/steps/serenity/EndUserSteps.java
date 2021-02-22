@@ -257,4 +257,49 @@ public class EndUserSteps extends ScenarioSteps {
     public void withHighRiskIsDisplayedInTheMessageDetailsPopUp(String arg0) {
         Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.withHighRiskIsDisplayedInTheMessageDetailsPopUp(arg0));
     }
+
+    @Step
+    public void openCIDLoginPage() {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.openCIDLoginPage();
+    }
+
+    @Step
+    public void flagsSubLinkIsDisplayedInTheExpandedMenu() {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.flagsSubLinkIsDisplayedInTheExpandedMenu());
+    }
+
+    @Step
+    public void clickOnFlagsSubLink() {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.clickOnFlagsSubLink();
+    }
+
+    @Step
+    public void flagsPageIsOpened() {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.flagsPageIsOpened());
+    }
+
+    @Step
+    public void flagIsDisplayed(String arg0) {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.flagIsDisplayed(arg0));
+    }
+
+    @Step
+    public void flagWithHighRiskIsDisplayedOnTheFlagsPage(String arg0) {
+        Assert.assertTrue("False", raVerfyingTheContentInsideTheEmailWithTheViolationPage.flagWithHighRiskIsDisplayedOnTheFlagsPage(arg0));
+    }
+
+    @Step
+    public void chooseFlagFromTheFlagsList(String arg0) {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.chooseFlagFromTheFlagsList(arg0);
+    }
+
+    @Step
+    public void flagPopUpIsOpened(String arg0) {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.flagPopUpIsOpened(arg0);
+    }
+
+    @Step
+    public void flagWithHighRiskIsDisplayedInsideFlagPopUp(String arg0) {
+        raVerfyingTheContentInsideTheEmailWithTheViolationPage.flagWithHighRiskIsDisplayedInsideFlagPopUp(arg0);
+    }
 }

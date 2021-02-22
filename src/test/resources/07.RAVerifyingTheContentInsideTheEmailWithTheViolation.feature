@@ -22,3 +22,18 @@ Feature: verifying the content inside the email with a violation
     Then "test message" with High risk is displayed in the Message Details pop-up
 
   Scenario: 7.003 Check that the risk flag (taken from the list of flags) is correctly displayed in the "Open Issues" list and inside the email
+    Then "test message" with High risk is displayed on the Open Issues list
+    When open CID login page
+    Then "Oleg Ivankovskyi" user name is displayed in the left navigation menu
+    Then Dashboard page is displayed
+    Then "Risk Policies" link is displayed in the Left Navigation menu
+    When click on "Risk Policies" link
+    Then Expanded menu is appeared
+    Then Flags sub-link is displayed in the Expanded menu
+    When click on Flags sub-link
+    Then Flags page is opened
+    Then "beaner" flag is displayed
+    Then "beaner" flag with High risk is displayed on the Flags page
+    When choose "beaner" flag from the flags list
+#    Then "beaner" flag pop-up is opened
+    Then "beaner" flag with High risk is displayed inside Flag pop-up

@@ -256,4 +256,49 @@ public class DefinitionSteps {
     public void withHighRiskIsDisplayedInTheMessageDetailsPopUp(String arg0) throws Throwable {
         endUserSteps.withHighRiskIsDisplayedInTheMessageDetailsPopUp(arg0);
     }
+
+    @When("^open CID login page$")
+    public void openCIDLoginPage() {
+        endUserSteps.openCIDLoginPage();
+    }
+
+    @Then("^Flags sub-link is displayed in the Expanded menu$")
+    public void flagsSubLinkIsDisplayedInTheExpandedMenu() {
+        endUserSteps.flagsSubLinkIsDisplayedInTheExpandedMenu();
+    }
+
+    @When("^click on Flags sub-link$")
+    public void clickOnFlagsSubLink() {
+        endUserSteps.clickOnFlagsSubLink();
+    }
+
+    @Then("^Flags page is opened$")
+    public void flagsPageIsOpened() {
+        endUserSteps.flagsPageIsOpened();
+    }
+
+    @Then("^\"([^\"]*)\" flag is displayed$")
+    public void flagIsDisplayed(String arg0) throws Throwable {
+        endUserSteps.flagIsDisplayed(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" flag with High risk is displayed on the Flags page$")
+    public void flagWithHighRiskIsDisplayedOnTheFlagsPage(String arg0) throws Throwable {
+        endUserSteps.flagWithHighRiskIsDisplayedOnTheFlagsPage(arg0);
+    }
+
+    @When("^choose \"([^\"]*)\" flag from the flags list$")
+    public void chooseFlagFromTheFlagsList(String arg0) throws Throwable {
+        endUserSteps.chooseFlagFromTheFlagsList(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" flag pop-up is opened$")
+    public void flagPopUpIsOpened(String arg0) throws Throwable {
+        endUserSteps.flagPopUpIsOpened(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" flag with High risk is displayed inside Flag pop-up$")
+    public void flagWithHighRiskIsDisplayedInsideFlagPopUp(String arg0) throws Throwable {
+        endUserSteps.flagWithHighRiskIsDisplayedInsideFlagPopUp(arg0);
+    }
 }

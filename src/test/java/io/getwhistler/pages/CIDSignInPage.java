@@ -7,7 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.util.concurrent.TimeUnit;
+import java.time.temporal.ChronoUnit;
 
 @DefaultUrl("https://central.getwhistler.io/")
 
@@ -16,7 +16,7 @@ public class CIDSignInPage extends net.serenitybdd.core.pages.PageObject {
     private static Logger logger = LoggerFactory.getLogger(CIDSignInPage.class);
 
     public boolean dashboardPageIsDisplayed() {
-        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.DASHBOARD_GENERAL_TABLES)));
+        withTimeoutOf(15, ChronoUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.DASHBOARD_GENERAL_TABLES)));
         return $(LOCATORS.DASHBOARD_GENERAL_TABLES).isPresent();
     }
 
